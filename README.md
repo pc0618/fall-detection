@@ -119,9 +119,11 @@ Similarly, the reported results above are the averages of the 5 independent expe
 <video width="320" height="240" controls>
   <source src="img/adl-01.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
+  Sample Video of a person not falling.
 </video>
-<img src="img/adl-01.mp4"  width="120" height="120">
+
+
+<video src="img/adl-01.mp4"  width="120" height="120">
 ![Sample Video of a person not falling](img/adl-01.mp4) <!-- .element height="50%" width="50%" -->
 ![Sample Video of a person slowing lying down](img/adl-40.mp4) <!-- .element height="50%" width="50%" -->
 ![Sample Video of a person falling](img/fall-01.mp4)<!-- .element height="50%" width="50%" -->
