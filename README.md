@@ -5,8 +5,13 @@ and reliable automatic fall detection systems can play an important role to miti
 The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities.
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+See deployment for notes on how to deploy the project on a live system.
+The repository contains the following files:
+1. Source of downloading three Falling Datasets 
+2. Dataset Pre-processing 
+3. Source code for two models: a) optimal flow CNN b) I3D model
+4. Results presentation. 
 
 ### Prerequisites
 
