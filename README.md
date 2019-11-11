@@ -131,7 +131,7 @@ Give an example
 
 ## Inflated 3D Conv Net: Results
 
-### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
+### A. First Results (Possible Correlation in Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
 
@@ -150,7 +150,7 @@ __Results__:
 <img src="/img/pr_1.png" alt="Precsion Recall" width="300">
 
 
-### B. Updated Results (No Overlap between Train/Test Sets, See Addendum)
+### B. Updated Results (No Correlation between Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
 
@@ -175,8 +175,11 @@ __Results__:
 
 __Answer__: Yes, a clip in test set can be a continuation of a clip in train set, but this only affects a couple of clips at most. This is illustrated in the diagram below.
 
+<img src="/img/response.png" alt="Response" width="300">
 
-Further, we recreated the train/test sets by first splitting whole movies into two sets and then creating clips. We retrained the model on this non-overlapping sets and got similar results.
+As can be seen in the image above, at most only clips 13,14, and clips 9,10 are continuation of each other in the train/test set respectively. So at most 4 clips (but possibly less) suffer the kind of correlation suggested in the question. 
+
+However to fully avoid this, we recreated the train/test sets by first splitting whole movies into two sets and then creating clips. We retrained the model on this non-overlapping sets and got similar results.
 
 
 ## Authors
