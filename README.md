@@ -24,7 +24,7 @@ For dataset preprocessing
 pip install opencv-python
 ```
 For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
-For model 2: follow the instructions for installing Sonnet.
+For model 2: follow the instructions for [installing Sonnet](https://github.com/deepmind/sonnet).
 
 ## Dataset description
 There are three different datasets used in this project: 1)[UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html); 2)[Kinetic Human Action Video Dataset](https://deepmind.com/research/open-source/kinetics); 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
