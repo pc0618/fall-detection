@@ -38,8 +38,8 @@ a signal of “fall” or “no fall.” The full pipeline can be seen in Figure
 
 ### Optical flow images generator
 The optical flow algorithm represents the patterns of the motion of objects as displacement vector fields between two consecutive images
-![Sample of sequential frames and their corresponding optical flow](img/optical_flow_image.PNG)
-<img src="img/optical_flow_image.PNG" alt="Sample of sequential frames and their corresponding optical flow" width="300">
+
+<img src="img/optical_flow_image.PNG" alt="Sample of sequential frames and their corresponding optical flow" width="600">
 ## Model Description
 The following figure shows the system architecture or pipeline: the RGB images are converted to optical flow images, then features are extracted with a CNN,
 and a FC-NN decides whether there has been a fall or not.
