@@ -47,7 +47,7 @@ Give an example
 ```
 
 
-![alt text](img/markdown_logo.png "Title Text")
+![alt text](images/optical_flow_CNN.png "Title Text")
 
 ### And coding style tests
 
