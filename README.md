@@ -97,8 +97,8 @@ __Results__:
 - *Precision*: 0.82
 - *Recall*: 0.82
 
-![Confusion Matrix](img/cm_2.png)
-![Precsion Recall](img/pr_2.png)
+<img src="/img/cm_2.png" alt="Confusion Matrix" width="300">
+<img src="/img/pr_2.png" alt="Precsion Recall" width="300">
 
 
 
