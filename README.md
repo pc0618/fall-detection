@@ -131,6 +131,13 @@ Give an example
 
 ## Inflated 3D Conv Net: Results
 
+### Model:
+
+<img src="/img/model_1.png" alt="Confusion Matrix" width="300">
+<img src="/img/model_2.png" alt="Confusion Matrix" width="300">
+<img src="/img/model_3.png" alt="Confusion Matrix" width="300">
+
+
 ### A. First Results (Possible Correlation in Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
