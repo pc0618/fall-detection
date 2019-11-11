@@ -141,7 +141,6 @@ Give an example
 ### Model:
 
 <img src="/img/model_1.png" alt="Confusion Matrix" width="300">
-<img src="/img/model_3.png" alt="Confusion Matrix" width="300">
 <img src="/img/model_2.png" alt="Confusion Matrix" width="800">
 
 
