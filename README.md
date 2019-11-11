@@ -175,7 +175,7 @@ __Results__:
 
 __Answer__: Yes, a clip in test set can be a continuation of a clip in train set, but this only affects a couple of clips at most. This is illustrated in the diagram below.
 
-<img src="/img/response.jpg" alt="Response" width="600">
+<img src="/img/response.jpg" alt="Response" width="900">
 
 As can be seen in the image above, at most only clips 13,14, and clips 9,10 are continuation of each other in the train/test set respectively. So at most 4 clips (but possibly less) suffer the kind of correlation suggested in the question. 
 
