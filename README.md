@@ -138,12 +138,11 @@ Give an example
 
 ## Inflated 3D Conv Net: Results
 
-<<<<<<< HEAD
 ### Model:
 
-<img src="/img/model_1.png" alt="Confusion Matrix" width="400">
-<img src="/img/model_3.png" alt="Confusion Matrix" width="400">
-<img src="/img/model_3.png" alt="Confusion Matrix" width="800">
+<img src="/img/model_1.png" alt="Confusion Matrix" width="300">
+<img src="/img/model_3.png" alt="Confusion Matrix" width="300">
+<img src="/img/model_2.png" alt="Confusion Matrix" width="800">
 
 
 ### A. First Results (Possible Correlation in Train/Test Sets, See Addendum)
