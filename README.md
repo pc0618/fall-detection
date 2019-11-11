@@ -34,10 +34,8 @@ XXXX hongyu write here about the sliding window
 
 
 ## Model Description
-The following figure shows the system architecture or pipeline: the RGB images are converted to optical flow images, then features are extracted with a CNN,
-and a FC-NN decides whether there has been a fall or not.
 
-![CNN_optical flow model](img/optical_flow_CNN.PNG)
+![alt text](img/optical_flow_CNN.png)
 
 ## Running the tests
 
@@ -63,9 +61,9 @@ Explain what these tests test and why
 Give an example
 ```
 
-#### Inflated 3D Conv Net: Results
+## Inflated 3D Conv Net: Results
 
-###### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
+### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
 
@@ -83,9 +81,23 @@ __Results__:
 ![Confusion Matrix](img/cm_1.png)
 ![Precsion Recall](img/pr_1.png)
 
+### B. Updated Results (No Overlap between Train/Test Sets, See Addendum)
 
+__Data__: RGB clips of 20 frames.
 
+|       | Fall  | No Fall |
+| :---  | :---  | :---    |
+| Train |  47   |  159    |
+| Test  |  11   |  56     |
 
+__Results__: 
+
+- *Accuracy*: 94%
+- *Precision*: 0.82
+- *Recall*: 0.82
+
+![Confusion Matrix](img/cm_2.png)
+![Precsion Recall](img/pr_2.png)
 
 
 
