@@ -24,8 +24,18 @@ pip install opencv-python
 ```
 For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
 For model 2: follow the instructions for [installing Sonnet](https://github.com/deepmind/sonnet).
+
 ## Dataset description
 There are three different datasets used in this project: 1)[UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html); 2)[Kinetic Human Action Video Dataset](https://deepmind.com/research/open-source/kinetics); 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
+
+## Dataset preprocessing
+
+XXXX hongyu write here about the sliding window
+
+
+## Model Description
+
+![alt text](img/optical_flow_CNN.png)
 
 ## Running the tests
 
@@ -40,7 +50,7 @@ Give an example
 ```
 
 
-![alt text](img/optical_flow_CNN.png)
+
 ![Sample Video of a person not falling](img/adl-01.mp4) ![Sample Video of a person slowing lying down](img/adl-40.mp4) ![Sample Video of a person falling](img/fall-01.mp4)
 
 ### And coding style tests
@@ -68,28 +78,14 @@ __Results__:
 - *Precision*: 1.00
 - *Recall*: 0.89
 
-<img src="img/cm_1.png" alt="Confusion Matrix" width="300">
-<img src="img/pr_1.png" alt="Precsion Recall" width="300">
+![Confusion Matrix](img/cm_1.png)
+![Precsion Recall](img/pr_1.png)
 
 
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
 
-## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
