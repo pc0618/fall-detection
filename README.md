@@ -18,14 +18,16 @@ The repository contains the following files:
 ## Prerequisites and Installing
 A step by step series of examples that tell you how to get a development env running
 What things you need to install the software and how to install them:
+
 For dataset preprocessing
 ```
 pip install opencv-python
 ```
 For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
-For model 2: follow the instructions for [installing Sonnet](https://github.com/deepmind/sonnet).
+For model 2: follow the instructions for installing Sonnet.
+
 ## Dataset description
-There are three different datasets used in this project: 1)[UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html); 2)[Kinetic Human Action Video Dataset](https://deepmind.com/research/open-source/kinetics); 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
+There are three different datasets used in this project: 1)UR Fall Detection Dataset; 2)Kinetic Human Action Video Dataset; 3)Multiple Cameras Fall Dataset.
 
 ## Running the tests
 
@@ -61,6 +63,17 @@ __Data__: RGB clips of 20 frames.
 | :---  | :---  | :---    |
 | Train |  40   |  200    |
 | Test  |  18   |  15     |
+
+
+__Results__: 
+
+- *Accuracy*: 94%
+- *Precision*: 1.00
+- *Recall*: 0.89
+
+![Confusion Matrix](img/cm_1.png)
+![Precsion Recall](img/pr_1.png)
+
 
 
 ## Deployment
