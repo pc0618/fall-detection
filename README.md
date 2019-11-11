@@ -34,6 +34,8 @@ XXXX hongyu write here about the sliding window
 
 
 ## Model Description
+The following figure shows the system architecture or pipeline: the RGB images are converted to optical flow images, then features are extracted with a CNN,
+and a FC-NN decides whether there has been a fall or not.
 
 ![CNN_optical flow model](img/optical_flow_CNN.PNG)
 
