@@ -64,9 +64,10 @@ Give an example
 
 __Data__: RGB clips of 20 frames.
 
-|        | Fall  | No Fall |
-| Train  |  40   |  200    |
-| Test   |  18   |  15     |
+|       | Fall  | No Fall |
+| :---  | :---  | :---    |
+| Train |  40   |  200    |
+| Test  |  18   |  15     |
 
 
 ## Deployment
