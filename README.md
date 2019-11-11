@@ -29,6 +29,23 @@ For model 2: follow the instructions for [installing Sonnet](https://github.com/
 There are three different datasets used in this project: 1)[UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html); 2)[Kinetic Human Action Video Dataset](https://deepmind.com/research/open-source/kinetics); 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
 
 ## Dataset preprocessing
+
+In order to describe how we process the data, we firstly introduce some notations. Here we use V to represent one video sample, $V_t$ represents our frame in this video. $L_v$ is the length of this video, $S_v$ is the starting point of frame that is labelled as "Fall". $E_v$ is the end point of the frame that is labelled as "No Fall". We also have two hyperparameter: One is the window size W, which is defined as how many frames per sample. Here sample means the data unit for training and evaluating the model. The other hyperparameter is T, which represents the threshold.
+
+All of our videos come with frame-wise labelling, which means each frames is labelled as 1 if it is "Fall", and 0 otherwise.  With these setups, here we introduce our algorithm to cut video into different pieces.
+
+{math: latex}
+
+Define W and T,
+Given V, do:
+&nbsp	for i in range(0, $L_v$, $W_v$):
+		if sum_ones($V_{i:i+W}$) > T:
+			collect $V_{i:i+W}$ as "Fall"
+		else:
+			collect $V_{i:i+W}$ as "No Fall"
+done
+
+
 ### sliding window
 XXXX hongyu write here about the sliding window
 
