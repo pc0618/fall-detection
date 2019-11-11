@@ -2,6 +2,7 @@
 
 Develop a model to perform human activity recognition, specifically to detect falls. Falls are an important health problem worldwide 
 and reliable automatic fall detection systems can play an important role to mitigate negative consequences of falls.
+The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities.
 
 ## Getting Started
 
