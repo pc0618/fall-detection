@@ -129,6 +129,8 @@ Give an example
 
 
 <img src="img/adl-01.mp4" alt="Confusion Matrix" width="800">
+<img src="img/adl-40.mp4" alt="Confusion Matrix" width="800">
+<img src="img/adl-01.mp4" alt="Confusion Matrix" width="800">
 
 ![Sample Video of a person not falling](img/adl-01.mp4) <!-- .element height="50%" width="50%" -->
 ![Sample Video of a person slowing lying down](img/adl-40.mp4) <!-- .element height="50%" width="50%" -->
