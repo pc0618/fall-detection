@@ -26,6 +26,9 @@ pip install opencv-python
 For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
 For model 2: follow the instructions for installing Sonnet.
 
+### Dataset description
+There are three different datasets used in this project: 1)UR Fall Detection Dataset; 2)Kinetic Human Action Video Dataset; 3)Multiple Cameras Fall Dataset.
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
