@@ -62,6 +62,16 @@ __Data__: RGB clips of 20 frames.
 | Train |  40   |  200    |
 | Test  |  18   |  15     |
 
+__Results__: 
+
+- *Accuracy*: 94%
+- *Precision*: 1.00
+- *Recall*: 0.89
+
+![Confusion Matrix](img/cm_1.png)
+![Precsion Recall](img/pr_1.png)
+
+
 
 ## Deployment
 
