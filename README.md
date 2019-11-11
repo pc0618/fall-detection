@@ -1,6 +1,5 @@
-# Fall_Detection_Shirui
 
-# Project Title
+# Project Title: Fall_Detection using Video 
 
 One Paragraph of project description goes here
 
