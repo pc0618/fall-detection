@@ -48,7 +48,7 @@ Give an example
 
 
 ![alt text](img/optical_flow_CNN.png "Title Text")
-![Sample Video](img/adl-01.mp4)
+![Sample Video of a person not falling](img/adl-01.mp4) ![Sample Video of a person slowing lying down](img/adl-40.mp4) ![Sample Video of a person falling](img/fall-01.mp4)
 
 ### And coding style tests
 
