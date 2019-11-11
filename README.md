@@ -24,9 +24,7 @@ For dataset preprocessing
 pip install opencv-python
 ```
 For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
-
 For model 2: follow the instructions for installing Sonnet.
-
 
 ## Running the tests
 
