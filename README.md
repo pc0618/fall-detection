@@ -1,7 +1,7 @@
+# Project Title: FALL DETECTION WITH DEEP NEURAL NETS
 
-# Project Title: Fall_Detection using Video 
-
-One Paragraph of project description goes here
+Develop a model to perform human activity recognition, specifically to detect falls. Falls are an important health problem worldwide 
+and reliable automatic fall detection systems can play an important role to mitigate negative consequences of falls.
 
 ## Getting Started
 
