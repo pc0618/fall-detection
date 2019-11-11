@@ -35,7 +35,7 @@ XXXX hongyu write here about the sliding window
 
 ## Model Description
 
-![alt text](img/optical_flow_CNN.png)
+![CNN_optical flow model](img/optical_flow_CNN.png)
 
 ## Running the tests
 
