@@ -2,7 +2,7 @@
 
 Develop a model to perform human activity recognition, specifically to detect falls. Falls are an important health problem worldwide 
 and reliable automatic fall detection systems can play an important role to mitigate negative consequences of falls.
-The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities. There are two neural network models in the /src folder
+The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities. There are two neural network models in the /src folder:
 1) the Fall-Detection-with-CNNs-and-Optical-Flow based on the paper: "Vision-Based Fall Detection with Convolutional Neural Networks" by Núñez-Marcos
 2) I3D models based on models reported in the paper: "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset" by Joao Carreira and Andrew Zisserman
 
