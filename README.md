@@ -15,39 +15,18 @@ The repository contains the following files:
 3. Source code for two models: a) optimal flow CNN b) I3D model
 4. Results presentation. 
 
-### Prerequisites
-
+### Prerequisites and Installing
+A step by step series of examples that tell you how to get a development env running
 What things you need to install the software and how to install them:
 
 For dataset preprocessing
 ```
 pip install opencv-python
 ```
-For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow
+For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
 
-check the file requirements.txt in the /scr folder for all the required dependencies
+For model 2: follow the instructions for installing Sonnet.
 
-For model 2: 
-```
-First follow the instructions for installing Sonnet.
-```
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
