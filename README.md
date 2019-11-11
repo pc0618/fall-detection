@@ -48,7 +48,7 @@ Give an example
 
 
 ![alt text](img/optical_flow_CNN.png "Title Text")
-![Sample Video](/markdown_video.mp4)
+![Sample Video](img/adl-01.mp4)
 
 ### And coding style tests
 
