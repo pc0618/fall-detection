@@ -109,7 +109,14 @@ __Results__:
 <img src="/img/pr_2.png" alt="Precsion Recall" width="300">
 
 
+### Addendum:
 
+#### Q1: For the i3d model, since you split the train/test sets on the clip level (rather than the video level), and a clip in the test set can be a continuation of a clip in train set, aren't there strong correlation between the two data sets?
+
+__Answer__: Yes, a clip in test set can be a continuation of a clip in train set, but this only affects a couple of clips at most. This is illustrated in the diagram below.
+
+
+Further, we recreated the train/test sets by first splitting whole movies into two sets and then creating clips. We retrained the model on this non-overlapping sets and got similar results.
 
 
 ## Authors
