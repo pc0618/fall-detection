@@ -46,6 +46,9 @@ Explain what these tests test and why
 Give an example
 ```
 
+
+![alt text](img/markdown_logo.png "Title Text")
+
 ### And coding style tests
 
 Explain what these tests test and why
