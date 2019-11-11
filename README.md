@@ -116,6 +116,11 @@ Similarly, the reported results above are the averages of the 5 independent expe
 
 
 ## Running the tests
+<video width="320" height="240" controls>
+  <source src="img/adl-01.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 <img src="img/adl-01.mp4"  width="120" height="120">
 ![Sample Video of a person not falling](img/adl-01.mp4) <!-- .element height="50%" width="50%" -->
 ![Sample Video of a person slowing lying down](img/adl-40.mp4) <!-- .element height="50%" width="50%" -->
@@ -131,11 +136,13 @@ Give an example
 
 ## Inflated 3D Conv Net: Results
 
+<<<<<<< HEAD
 ### Model:
 
 <img src="/img/model_1.png" alt="Confusion Matrix" width="400">
 <img src="/img/model_3.png" alt="Confusion Matrix" width="400">
 <img src="/img/model_3.png" alt="Confusion Matrix" width="800">
+
 
 ### A. First Results (Possible Correlation in Train/Test Sets, See Addendum)
 
