@@ -1,7 +1,8 @@
+# Project Title: FALL DETECTION WITH DEEP NEURAL NETS
 
-# Project Title: Fall_Detection using Video 
-
-One Paragraph of project description goes here
+Develop a model to perform human activity recognition, specifically to detect falls. Falls are an important health problem worldwide 
+and reliable automatic fall detection systems can play an important role to mitigate negative consequences of falls.
+The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities.
 
 ## Getting Started
 
@@ -45,6 +46,10 @@ Explain what these tests test and why
 Give an example
 ```
 
+
+![alt text](img/optical_flow_CNN.png "Title Text")
+![Sample Video](/markdown_video.mp4)
+
 ### And coding style tests
 
 Explain what these tests test and why
@@ -73,9 +78,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Hongyu Shen** 
+* **William Wei** 
+* **Asad Khan** 
+* **Shirui Luo** 
+* **Madhu Vellakal** 
 
 ## License
 
