@@ -27,7 +27,7 @@ For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requi
 For model 2: follow the instructions for installing Sonnet.
 
 ## Dataset description
-There are three different datasets used in this project: 1)UR Fall Detection Dataset; 2)Kinetic Human Action Video Dataset; 3)Multiple Cameras Fall Dataset.
+There are three different datasets used in this project: 1)UR Fall Detection Dataset; 2)Kinetic Human Action Video Dataset; 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
 
 ## Running the tests
 
