@@ -17,12 +17,20 @@ The repository contains the following files:
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them:
 
+For dataset preprocessing
 ```
-Give examples
+pip install opencv-python
 ```
+For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow
 
+check the file requirements.txt in the /scr folder for all the required dependencies
+
+For model 2: 
+```
+First follow the instructions for installing Sonnet.
+```
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
@@ -64,18 +72,6 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-
-#### Inflated 3D Conv Net: Results
-
-###### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
-
-__Data__: RGB clips of 20 frames.
-
-|       | Fall  | No Fall |
-| :---  | :---  | :---    |
-| Train |  40   |  200    |
-| Test  |  18   |  15     |
-
 
 ## Deployment
 
