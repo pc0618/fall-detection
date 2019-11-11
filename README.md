@@ -78,8 +78,9 @@ __Results__:
 - *Precision*: 1.00
 - *Recall*: 0.89
 
-![Confusion Matrix](img/cm_1.png)
-![Precsion Recall](img/pr_1.png)
+<img src="/img/cm_1.png" alt="Confusion Matrix" width="300">
+<img src="/img/pr_1.png" alt="Precsion Recall" width="300">
+
 
 ### B. Updated Results (No Overlap between Train/Test Sets, See Addendum)
 
