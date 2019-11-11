@@ -47,7 +47,7 @@ Given V, do:
 done
 ```
 
-
+Given the above algorithm, we go through all the videos with train/test split.
 
 Optical flow images represent the motion of two consecutive frames, which is too short-timed to detect a fall. However, stacking a set of them 
 the network can also learn longer time-related features. These features were used as input of a classifier, a fully connected neural network (FCNN), which outputs 
