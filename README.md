@@ -29,13 +29,21 @@ For model 2: follow the instructions for [installing Sonnet](https://github.com/
 There are three different datasets used in this project: 1)[UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html); 2)[Kinetic Human Action Video Dataset](https://deepmind.com/research/open-source/kinetics); 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
 
 ## Dataset preprocessing
-
+### sliding window
 XXXX hongyu write here about the sliding window
 
+Optical flow images represent the motion of two consecutive frames, which is too short-timed to detect a fall. However, stacking a set of them 
+the network can also learn longer time-related features. These features were used as input of a classifier, a fully connected neural network (FCNN), which outputs 
+a signal of “fall” or “no fall.” The full pipeline can be seen in Figure 1. Finally, we used a three-step
+
+### Optical flow images generator
+The optical flow algorithm represents the patterns of the motion of objects as displacement vector fields between two consecutive images
 
 ## Model Description
+The following figure shows the system architecture or pipeline: the RGB images are converted to optical flow images, then features are extracted with a CNN,
+and a FC-NN decides whether there has been a fall or not.
 
-![alt text](img/optical_flow_CNN.png)
+![CNN_optical flow model](img/optical_flow_CNN.PNG)
 
 ## Running the tests
 
@@ -61,9 +69,9 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Inflated 3D Conv Net: Results
+#### Inflated 3D Conv Net: Results
 
-### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
+###### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
 
@@ -78,27 +86,12 @@ __Results__:
 - *Precision*: 1.00
 - *Recall*: 0.89
 
-<img src="/img/cm_1.png" alt="Confusion Matrix" width="300">
-<img src="/img/pr_1.png" alt="Precsion Recall" width="300">
+![Confusion Matrix](img/cm_1.png)
+![Precsion Recall](img/pr_1.png)
 
 
-### B. Updated Results (No Overlap between Train/Test Sets, See Addendum)
 
-__Data__: RGB clips of 20 frames.
 
-|       | Fall  | No Fall |
-| :---  | :---  | :---    |
-| Train |  47   |  159    |
-| Test  |  11   |  56     |
-
-__Results__: 
-
-- *Accuracy*: 94%
-- *Precision*: 0.82
-- *Recall*: 0.82
-
-<img src="/img/cm_2.png" alt="Confusion Matrix" width="300">
-<img src="/img/pr_2.png" alt="Precsion Recall" width="300">
 
 
 
