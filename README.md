@@ -15,7 +15,7 @@ The repository contains the following files:
 3. Source code for two models: a) optimal flow CNN b) I3D model
 4. Results presentation. 
 
-### Prerequisites and Installing
+## Prerequisites and Installing
 A step by step series of examples that tell you how to get a development env running
 What things you need to install the software and how to install them:
 
@@ -26,7 +26,7 @@ pip install opencv-python
 For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
 For model 2: follow the instructions for installing Sonnet.
 
-### Dataset description
+## Dataset description
 There are three different datasets used in this project: 1)UR Fall Detection Dataset; 2)Kinetic Human Action Video Dataset; 3)Multiple Cameras Fall Dataset.
 
 ## Running the tests
@@ -52,21 +52,6 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-
-
-
-#### Inflated 3D Conv Net: Results
-
-###### A. First Results (Possible Overlap in Train/Test Sets, See Addendum)
-
-__Data__: RGB clips of 20 frames.
-
-|       | Fall  | No Fall |
-| :---  | :---  | :---    |
-| Train |  40   |  200    |
-| Test  |  18   |  15     |
-
-
 
 ## Deployment
 
