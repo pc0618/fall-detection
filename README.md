@@ -65,6 +65,56 @@ and a FC-NN decides whether there has been a fall or not.
 
 ![CNN_optical flow model](img/optical_flow_CNN.PNG)
 
+## VGG-16 Based Model
+
+VGG-16 is based on convolutional neural networks (CNNs), which have much lower computation cost than the recurrent neural networks (RNNs), or the long short-term memory (LSTM) networks. Furthermore, as we will show later, the CNN-based model can effectively capture the temporal correlation in the video clips, which further makes the use of RNN or LSTM redundant. From this perspective, this light-weight model is much more suitable for real-time detection scenarios.
+### K-fold Cross-Validation
+
+Cross-validation is necessary for the test machine learning algorithms on a limited dataset, which is usually the case for video classification problems. In our experiment, we adopted 5-fold cross-validation. The workflow is as follows:
+
+1. Shuffle the dataset randomly.
+2. Split the dataset into 5 groups.
+3. For each group, conduct the following experiment:
+
+        a. Reserve the current group as the test set.
+        b. Use the remaining 4 groups as the training set.
+        c. Train the model on the training set.
+        d. Evaluate the model on the reserved test set (the current group).
+        e. Record the evaluation scores and discard the model.
+4. Summarize the performance metrics for all the 5 experiments.
+
+### UR Fall Detection Dataset I
+
+Dataset I is prepared on the frame level, which means that we treat each frames, or group of frame, independently, even though they might come from the same video clip. This dataset is easier to prepare, however, it might inadvertently introduce weak correlation in training and test set. This problem will be address in Dataset II.
+
+The 5-fold cross-validated true positive rate (TPR), true negative rate (TNR), false positive rate (FPR), and false negative rate (FNR), is as follows:
+```
+Accuracy: 99% (+/- 1%)
+
+TPR: 100% (+/- 1%)
+TNR: 99% (+/- 1%)
+FPR: 1% (+/- 1%)
+FNR: 0% (+/- 1%)
+```
+
+The reported results above are the averages of the 5 independent experiments from the 5-fold cross-validation, and they show the high accuracy and low variance in the performance of our trained model.
+
+### UR Fall Detection Dataset II
+
+Dataset II is prepared in such a way that the frames of the same video clip are either in the training set or in the test set. So there will not be any correlation between samples in the training set and samples in the test set.
+
+```
+Accuracy: 99% (+/- 1%)
+
+TPR: 94% (+/- 3%)
+TNR: 99% (+/- 1%)
+FPR: 1% (+/- 1%)
+FNR: 6% (+/- 3%)
+```
+
+Similarly, the reported results above are the averages of the 5 independent experiments from the 5-fold cross-validation, and they, once again, show the high accuracy and low variance in the performance of our trained model.
+
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
