@@ -15,15 +15,6 @@ The repository contains the following files:
 3. Source code for two models: a) optimal flow CNN b) I3D model
 4. Results presentation. 
 
-## Prerequisites and Installing
-A step by step series of examples that tell you how to get a development env running
-What things you need to install the software and how to install them:
-For dataset preprocessing
-```
-pip install opencv-python
-```
-For model 1: the Fall-Detection-with-CNNs-and-Optical-Flow, check the file requirements.txt in the /scr folder for all the required dependencies
-For model 2: follow the instructions for [installing Sonnet](https://github.com/deepmind/sonnet).
 
 ## Dataset description
 There are three different datasets used in this project: 1)[UR Fall Detection Dataset](http://fenix.univ.rzeszow.pl/~mkepski/ds/uf.html); 2)[Kinetic Human Action Video Dataset](https://deepmind.com/research/open-source/kinetics); 3)[Multiple Cameras Fall Dataset](http://www.iro.umontreal.ca/~labimage/Dataset/).
@@ -59,13 +50,13 @@ The optical flow algorithm represents the patterns of the motion of objects as d
 <img src="img/optical_flow_image.PNG" alt="Sample of sequential frames and their corresponding optical flow" width="800">
 
 
-## Model Description
+## VGG-16 Based Model
+### Model Description
 The following figure shows the system architecture or pipeline: the RGB images are converted to optical flow images, then features are extracted with a CNN,
 and a FC-NN decides whether there has been a fall or not.
 
 ![CNN_optical flow model](img/optical_flow_CNN.PNG)
 
-## VGG-16 Based Model
 
 VGG-16 is based on convolutional neural networks (CNNs), which have much lower computation cost than the recurrent neural networks (RNNs), or the long short-term memory (LSTM) networks. Furthermore, as we will show later, the CNN-based model can effectively capture the temporal correlation in the video clips, which further makes the use of RNN or LSTM redundant. From this perspective, this light-weight model is much more suitable for real-time detection scenarios.
 ### K-fold Cross-Validation
@@ -83,7 +74,7 @@ Cross-validation is necessary for the test machine learning algorithms on a limi
         e. Record the evaluation scores and discard the model.
 4. Summarize the performance metrics for all the 5 experiments.
 
-### UR Fall Detection Dataset I
+### UR Fall Detection Dataset I (Possible Correlation in Train/Test Sets, See Addendum)
 
 Dataset I is prepared on the frame level, which means that we treat each frames, or group of frame, independently, even though they might come from the same video clip. This dataset is easier to prepare, however, it might inadvertently introduce weak correlation in training and test set. This problem will be address in Dataset II.
 
@@ -99,9 +90,9 @@ FNR: 0% (+/- 1%)
 
 The reported results above are the averages of the 5 independent experiments from the 5-fold cross-validation, and they show the high accuracy and low variance in the performance of our trained model.
 
-### UR Fall Detection Dataset II
+### UR Fall Detection Dataset II (No Correlation between Train/Test Sets, See Addendum)
 
-Dataset II is prepared in such a way that the frames of the same video clip are either in the training set or in the test set. So there will not be any correlation between samples in the training set and samples in the test set.
+Dataset II is prepared in such a way that all the frames of one particular video clip are either in the training set or in the test set. So there will not be any correlation between samples in the training set and samples in the test set.
 
 ```
 Accuracy: 99% (+/- 1%)
@@ -144,7 +135,7 @@ Give an example
 <img src="/img/model_2.png" alt="Confusion Matrix" width="800">
 
 
-### A. First Results (Possible Correlation in Train/Test Sets, See Addendum)
+### A. First Results (UR Fall Detection Dataset I: Possible Correlation in Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
 
@@ -163,7 +154,7 @@ __Results__:
 <img src="/img/pr_1.png" alt="Precsion Recall" width="300">
 
 
-### B. Updated Results (No Correlation between Train/Test Sets, See Addendum)
+### B. Updated Results (UR Fall Detection Dataset II: No Correlation between Train/Test Sets, See Addendum)
 
 __Data__: RGB clips of 20 frames.
 
@@ -211,5 +202,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Hat tip to anyone whose code was used
 * Inspiration
-* etc
 
