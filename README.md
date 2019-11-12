@@ -115,9 +115,9 @@ Similarly, the reported results above are the averages of the 5 independent expe
 
 
 <video src="img/adl-01.mp4"  width="120" height="120">
-![Sample Video of a person not falling](img/adl-01.mp4) <!-- .element height="50%" width="50%" -->
-![Sample Video of a person slowing lying down](img/adl-40.mp4) <!-- .element height="50%" width="50%" -->
-![Sample Video of a person falling](img/fall-01.mp4)<!-- .element height="50%" width="50%" -->
+![Sample Video of a person not falling](videos/adl-01.mp4) <!-- .element height="50%" width="50%" -->
+![Sample Video of a person slowing lying down](videos/adl-40.mp4) <!-- .element height="50%" width="50%" -->
+![Sample Video of a person falling](videos/fall-01.mp4)<!-- .element height="50%" width="50%" -->
 
 ### And coding style tests
 
