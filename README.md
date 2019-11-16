@@ -119,7 +119,7 @@ Similarly, the reported results above are the averages of the 5 independent expe
 ![Sample Video of a person slowing lying down](videos/adl-40.mp4) <!-- .element height="50%" width="50%" -->
 ![Sample Video of a person falling](videos/fall-01.mp4)<!-- .element height="50%" width="50%" -->
 ![Sample Video of a random object falling](videos/random_object_falling_1.mp4)<!-- .element height="50%" width="50%" -->
-![Sample Video of another random object falling](videos/random_object_falling_1.mp4)<!-- .element height="50%" width="50%" -->
+![Sample Video of another random object falling](videos/random_object_falling_2.mp4)<!-- .element height="50%" width="50%" -->
 
 ### And coding style tests
 
