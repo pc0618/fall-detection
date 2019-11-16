@@ -175,6 +175,10 @@ __Results__:
 <img src="/img/pr_2.png" alt="Precsion Recall" width="300">
 
 
+![Sample Video of a random object falling](videos/id3_random_object_falling.mov)<!-- .element height="50%" width="50%" -->
+![Sample Video of a skater stomping](videos/id3_guy_stomping.mov)<!-- .element height="50%" width="50%" -->
+
+
 ### Addendum:
 
 #### Q1: For the i3d model, since you split the train/test sets on the clip level (rather than the video level), and a clip in the test set can be a continuation of a clip in train set, aren't there strong correlation between the two data sets?
