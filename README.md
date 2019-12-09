@@ -15,7 +15,9 @@ perform transfer learning on the previous two networks that are trained on eithe
 of different daily activitives/sports, etc across 400 different labelled categories. We finetune the two network with our prepared dataset and perform fall
 detection inference once they are trained. 
 
-Overall, we achieved 94% detection accuracy with prevision: 82% and recall 82%.
+Overall, we achieved 94% detection accuracy with prevision: 82% and recall 82% for I3D model, and Accuracy: 99% (+/- 1%), False Positive Rate: 1% (+/- 1%),
+False Negative Rate: 6% (+/- 3%)
+.
 
 
 ## Getting Started
