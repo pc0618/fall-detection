@@ -16,8 +16,7 @@ of different daily activitives/sports, etc across 400 different labelled categor
 detection inference once they are trained. 
 
 Overall, we achieved 94% detection accuracy with prevision: 82% and recall 82% for I3D model, and Accuracy: 99% (+/- 1%), False Positive Rate: 1% (+/- 1%),
-False Negative Rate: 6% (+/- 3%)
-.
+False Negative Rate: 6% (+/- 3%).
 
 
 ## Getting Started
