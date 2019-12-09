@@ -2,15 +2,22 @@
 
 Develop a model to perform human activity recognition, specifically to detect falls. Falls are an important health problem worldwide 
 and reliable automatic fall detection systems can play an important role to mitigate negative consequences of falls.
-The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities. There are two neural network models in the /src folder:
+The automatic detection of falls has attracted considerable attention in the computer vision and pattern recognition communities.
+To tackle this we leverage the following two neural network models:
+
 1) the Fall-Detection-with-CNNs-and-Optical-Flow based on the paper: "Vision-Based Fall Detection with Convolutional Neural Networks" by Núñez-Marcos
 2) I3D models based on models reported in the paper: "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset" by Joao Carreira and Andrew Zisserman
 
 The basic idea of this project is to use transfer learning on Fall Detection. Specifically, we preprocess fall detection videos to different crops.
-Each one has 20 frames with labels on every single frame. The original video is in RGB. In addition to this domain, we also made conversion from RGB to
+Each crop has 20 frames with labels on every single frame. The original video are in RGB. In addition to this domain, we also made conversion from RGB to
 optical flow domain, where the correlation and the velocity of the moving object across frames are considered. Combining the data from the two domain, we
-perform transfer learning on the previous two networks that are trained on either fall detection with other dataset or Kinetics dataset that includes videos
-describe different daily activitives. We finetune the two network with our prepared dataset and perform fall detection inference once they are trained. 
+perform transfer learning on the previous two networks that are trained on either fall detection with other dataset or Kinetics-400 dataset that includes videos
+of different daily activitives/sports, etc across 400 different labelled categories. We finetune the two network with our prepared dataset and perform fall
+detection inference once they are trained. 
+
+Overall, we achieved as
+
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 See deployment for notes on how to deploy the project on a live system.
